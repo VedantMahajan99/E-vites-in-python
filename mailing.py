@@ -25,7 +25,8 @@ for gamer in attending_game_night:
             file_name = f.name
 
         msg.add_attachment(file_data, maintype = 'image' , subtype = file_type , filename = file_name)
-
-        smtp.login('themahajan99@gmail.com' , 'Amritsar11111')
+        
+        # use password instead of ****
+        smtp.login('themahajan99@gmail.com' , '**********')
 
         smtp.send_message(msg)
